@@ -1,0 +1,32 @@
+.user-info__wrapper {
+  text-align: center;
+  min-width: 320px;
+  background-color: var(--bg-color);
+  border-radius: 3px;
+  box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.75);
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.user-info__wrapper .form-button {
+  margin-bottom: 0;
+}
+
+.user-info__header {
+  color: var(--white);
+  margin: 0;
+}
+
+.user-info__table {
+  width: 100%;
+}
+
+.user-info__table tr {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--primary);
+}
+
+.user-info__table tr td {
+  color: var(--white);
+}

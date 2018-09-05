@@ -1,0 +1,30 @@
+.form {
+  padding: 20px 15px 0;
+  box-sizing: border-box;
+  width: 450px;
+}
+
+@media only screen and (max-width: 500px) {
+  .form {
+    width: 320px;
+  }
+}
+
+.form-button {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  background-color: var(--primary);
+  padding: 15px 0;
+  font-family: var(--main-font);
+  font-size: 20px;
+  color: var(--white);
+  margin: 15px 0;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+  transform: scale(1);
+}
+
+.form-button:hover {
+  transform: scale(0.99);
+}

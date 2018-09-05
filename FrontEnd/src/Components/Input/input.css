@@ -1,0 +1,89 @@
+.form-input__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.form-input__wrapper .form-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-family: var(--main-font);
+  font-size: 18px;
+  width: 100%;
+}
+
+.form-input__wrapper .form-input::placeholder {
+  color: var(--secondary);
+}
+
+.form-input__wrapper .form-input__box {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-input__wrapper .form-input__box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 1px;
+  width: 100%;
+  background-color: var(--secondary);
+}
+
+.form-input__wrapper .form-input__box::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  background-color: var(--primary);
+  transition: all 0.3s linear;
+}
+
+.form-input__wrapper .form-input__box-active::before {
+  width: 100%;
+  left: 0;
+}
+
+.form-input__wrapper .form-input__box-active .form-input__icon {
+  color: var(--primary);
+}
+
+.form-input__wrapper .form-input__box-invalid::before {
+  width: 100%;
+  left: 0;
+  height: 1px;
+  background-color: var(--red);
+}
+
+.form-input__wrapper .form-input__box-invalid .form-input__icon-type {
+  color: var(--red);
+}
+
+.form-input__wrapper .form-input__icon-type {
+  transition: color 0.3s linear;
+  padding: 0 5px;
+  color: var(--secondary);
+}
+
+.form-input__wrapper .form-input__icon-valid {
+  color: var(--primary);
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.form-input__wrapper .form-input__label-error {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  color: var(--red);
+}

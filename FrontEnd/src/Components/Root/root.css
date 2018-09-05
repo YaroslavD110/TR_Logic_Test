@@ -1,0 +1,21 @@
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 968px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.toast-wrapper {
+  border-radius: 4px !important;
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  font-family: var(--main-font);
+}
+
+.toast-content i {
+  margin-right: 5px;
+}

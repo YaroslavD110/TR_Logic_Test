@@ -1,0 +1,12 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+  auth-app:
+    image: tangerine69/auth-app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
